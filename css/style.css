@@ -1,0 +1,258 @@
+/* &display=swap&subset=cyrillic-ext */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 16px; /* по умолчанию */
+}
+body {
+	line-height: 1;
+	font-family: "roboto";
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	padding: 20px;
+}
+/* ------------------------------ */
+
+.menu {
+	margin: 0 0 30px 0;
+}
+.menu li{
+	display: inline-block;
+}
+.menu li:not(:last-child) {
+	padding: 0 15px 0 0;
+	
+}
+.menu li:hover {
+	color: red;
+}
+.link{
+	margin: 0 0 20px 0;
+}
+.link a:visited {
+	color:green
+}
+
+.paragraph {
+	margin: 0 0 50px 0;
+}
+.paragraph p::first-line{
+	font-style: italic;
+	color: rgba(228, 106, 6, 0.829);
+}
+.paragraph p:first-child {
+	color: rgb(33, 45, 212);
+}
+.paragraph p{
+	margin: 0 0 20px 0;
+}
+.paragraph p:last-child {
+	margin-bottom: 0;
+	color: chartreuse;
+}
+.paragraph p:nth-child(2){
+	color: blueviolet;
+}
+
+.text{
+	margin: 0 0 30px 0;
+}
+.text p:first-child::first-letter{
+	color: #000;
+	font-size: 40px;
+	padding: 0 0 0 20px;
+}
+.text p:nth-child(odd){
+	color: red;
+}
+.text p:not(:last-child){
+	margin: 0 0 20px 0;
+}
+.text p:last-of-type{
+	color:green;
+}
+
+.list {
+	margin: 0 0 30px 0;
+}
+.list li:not(:last-child){
+	padding: 0 0 10px 0;
+}
+.list li::before{
+	content: "";
+	width: 10px;
+	height: 10px;
+	background-color:red;
+	display: inline-block;
+	border-radius: 50%;
+	margin: 3px 5px 0 0;
+	vertical-align: top;
+}
+.list li:hover::before{
+	width: 12px;
+	height: 12px;
+	background-color:blue;
+}
+.item {
+	margin: 0 0 30px 0;
+}
+.promisebox{
+	width: 1050px;
+	margin: 0 auto;
+	background: #F5F5F5;
+}
+
+.promisebox_header{
+	margin: 0 0 68px 0;
+}
+.promisebox_logo {
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 24px;
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+	color: #5D62B5;
+	margin: 0 0 33px 0;
+}
+.promisebox_logo::before{
+	content: "";
+	display: inline-block;
+	width: 18px;
+	height: 19px;
+	background: url(../img/icons/title\ icon.png) 0 0 no-repeat;
+	vertical-align: top;
+	margin: 0 16px 0 0;
+}
+.promisebox_title{
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 42px;
+	color: #000;
+}
+
+.promisebox_body{
+	width: 240px;
+	height: 148px;
+	display: inline-block;
+}
+.promisebox_one{
+	display: inline-block;
+	margin: 0 23px 0 0;
+}
+.promisebox_one::before{
+	content: "";
+	display: inline-block;
+	width: 63px;
+	height: 63px;
+	background: url(../img/icons/dog_love_24x.png) 0 0 no-repeat;
+	margin: 0 23px 0 0;
+	vertical-align: top;
+}
+.promisebox_two{
+	display: inline-block;
+	margin: 0 23px 0 0;
+}
+.promisebox_two::before{
+	content: "";
+	display: inline-block;
+	width: 63px;
+	height: 63px;
+	background: url(../img/icons/dog_girl_24x.png) 0 0 no-repeat;
+	margin: 0 23px 0 0;
+	vertical-align: top;
+}
+.promisebox_three{
+	display: inline-block;
+}
+.promisebox_three::before{
+	content: "";
+	display: inline-block;
+	width: 63px;
+	height: 63px;
+	background: url(../img/icons/dog_stream_24x.png) 0 0 no-repeat;
+	margin: 0 23px 0 0;
+	vertical-align: top;
+}
+.promisebox_body-title{
+	font-weight: 900;
+	font-size: 19px;
+	line-height: 26px;
+	color: #F2726F;
+	margin: 0 0 20px 0;
+}
+.promisebox_body-text{
+	line-height: 24px;
+	letter-spacing: 0.15px;
+	color: #4B4B4B;
+}
+
+.box{
+	background: #252525;
+	width: 255px;
+    height: 206px;
+	border-radius: 3%;
+	margin: 0 0 30px 0;
+}
+.box_title{
+	color: #fff;
+	font-size: 22px;
+	line-height: 25px;
+	padding: 24px 24px;
+	margin: 0 0 0 10px;
+
+}
+.box_title::after{
+	content: "";
+	height: 2px;
+	width: 40px;
+	background-color: #34c759;;
+	display: block;
+	margin: 15px 0 0 0;
+}
+.box_text{
+	color: #ffffff50;
+	font-size: 13px;
+	padding: 0  24px 60px 24px;
+	line-height: 18px;
+}
+
+
+
